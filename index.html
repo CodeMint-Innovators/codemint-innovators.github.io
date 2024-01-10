@@ -30,10 +30,10 @@ h1 {
         }
 
         body {
-            background-color: #0077be; /* Ocean Blue Color */
-            overflow-x: hidden;
-            scroll-behavior: smooth;
-            color: white;
+          background: linear-gradient(135deg, #0077be, #004177);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    color: white;
         }
 
         html::-webkit-scrollbar {
@@ -88,7 +88,7 @@ h1 {
         }
 
         .hero p {
-            font-size: 2rem;
+            font-size: 1.25rem;
             line-height: 1.5;
         }
 
@@ -142,7 +142,7 @@ h1 {
         }
 
         .card-front {
-            background-color: #000080;
+            background-color: #004173;
             transform: rotateY(0deg);
         }
 
@@ -257,11 +257,18 @@ h1 {
     border: 2px solid #FFECBC;
 }
 
-/* Contact Form Borders */
+.contact {
+    border: 2px solid #0077be;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 2rem;
+    transition: border 0.3s ease-in-out;
+}
+
 .contact form input,
 .contact form textarea,
 .contact form button {
-    border: 2px solid #0077be; 
+    border: 2px solid #0077be;
     border-radius: 8px;
     overflow: hidden;
     transition: border 0.3s ease-in-out;
@@ -269,8 +276,9 @@ h1 {
 
 .contact form input:focus,
 .contact form textarea:focus {
-    border: 2px solid #FFECBC;
+    border: 2px solid #FFECBC; 
 }
+
 @keyframes textAnimation {
     0% {
         opacity: 0;
